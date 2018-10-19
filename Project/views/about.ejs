@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <% include templates/headers.ejs %>
+
+    <h1><%= title %> <%= points %></h1>
+    <p>Welcome <%= name %>'s about page</p>
+
+    <p><%= videodata.categoryName %></p>
+
+    <ul>
+      <% videodata.categories.forEach(function(item){ %>
+        
+        <li> <a href=?<%= item.categoryID %>> <%= item.categoryName %> </a></li>
+        
+      <% }) %>
+
+    </ul>
+
+    <form action="/about" method="post">
+      <label for="team_name">Enter name: </label>
+      <input id="team_name" type="text" name="name_field" value="Default name for team.">
+      <input type="submit" value="OK">
+  </form>
+
+  </body>
+</html>

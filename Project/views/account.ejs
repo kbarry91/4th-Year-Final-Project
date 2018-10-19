@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <% include templates/headers.ejs %>
+
+    <h1><%= title %></h1>
+
+    <form action="/account" method="post">
+    <input type="submit" value="Logout">
+    </form>
+
+  </body>
+</html>

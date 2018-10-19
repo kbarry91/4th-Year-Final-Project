@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <% include templates/headers.ejs %>
+
+    <h1>Register Page</h1>
+    <p>Welcome to the register page</p>
+
+    <form action="/register" method="post">
+      <label for="team_name">Enter Username: </label>
+      <input id="username" type="text" name="username" placeholder="John_Doe">
+      <br>
+      <label for="team_name">Enter Password: </label>
+      <input id="password" type="password" name="password" placeholder="****">
+      <br>
+      <input type="submit" value="Submit">
+  </form>
+
+  </body>
+</html>

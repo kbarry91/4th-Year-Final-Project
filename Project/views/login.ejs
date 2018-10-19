@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <% include templates/headers.ejs %>
+
+    <h1>Login Page</h1>
+    <p>Welcome to the login page</p>
+
+    <form action="/login" method="post">
+      <label for="team_name">Enter Username: </label>
+      <input id="username" type="text" name="username" placeholder="John_Doe">
+      <br>
+      <label for="team_name">Enter Password: </label>
+      <input id="password" type="password" name="password" placeholder="****">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+  <a href="/register">Register</a>
+
+  </body>
+</html>
